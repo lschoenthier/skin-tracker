@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skintracker_dev
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.jdbc.time_zone: UTC
+
+csfloat:
+  api-base: https://csfloat.com/api/v1
+  api-key: ${CSFLOAT_API_KEY}
+
+tracker:
+  interval-minutes: 30
